@@ -13,3 +13,12 @@ inputText.addEventListener("keyup", () => {
     output.textContent = countWords(str);
   }
 });
+
+inputText.addEventListener("paste", () => {
+  let str = inputText.value;
+  if (str === "") {
+    output.textContent = "0";
+  } else {
+    output.textContent = countWords(str);
+  }
+});
