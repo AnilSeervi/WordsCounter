@@ -1,0 +1,46 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100vh;
+  font-family: "Fira Code";
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+}
+.inputWrapper {
+  margin-bottom: 0.6em;
+}
+h1 {
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 1em;
+}
+.para {
+  margin-bottom: 10em;
+}
+p {
+  line-height: 1.6;
+}
+#textInput {
+  width: 40vw;
+  height: 25px;
+  border-radius: 3px;
+  padding: 0.5em;
+  letter-spacing: 1px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+  font-style: italic;
+}
+@media (max-width: 600px) {
+  #textInput {
+    margin-top: 1em;
+    width: 80vw;
+  }
+}
